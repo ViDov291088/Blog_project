@@ -10,6 +10,10 @@ class BlogListView(ListView):
 
 
 class BlogDetailView(DetailView):
-    """добавляем функционал для индивидуальных страниц блога"""
+    """индивидуальная страница поста в блоге"""
     model = Post
+    image = Post.image
     template_name = 'post_detail.html'
+
+
+
